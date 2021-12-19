@@ -1,0 +1,73 @@
+ <!-- <div class="mt-5 mb-4 is-flex is-justify-content-space-between is-align-items-center">
+        <h3>Categories</h3>
+        <b-button type="is-info" icon-right="plus" @click="addCategory">
+          Add new category
+        </b-button>
+      </div>
+
+      <b-collapse
+        v-for="(cate, idx) in categories"
+        :key="idx"
+        class="card mb-2"
+        :open="isOpen === idx"
+        animation="slide"
+        aria-id="contentIdForA11y3"
+        @open="isOpen = idx"
+      >
+        <template #trigger="props">
+          <div
+            class="card-header"
+            role="button"
+            aria-controls="contentIdForA11y3"
+          >
+            <p class="card-header-title">
+              {{ cate.title }}
+            </p>
+
+            <a class="card-header-icon">
+              <b-icon :icon="props.open ? 'menu-down' : 'menu-up'" />
+            </a>
+          </div>
+        </template>
+
+        <div class="card-content">
+          <div class="mb-3">
+            <b-button type="is-info" icon-right="square-edit-outline" @click="editCategoryTitle(idx)">
+              Edit category title
+            </b-button>
+            <b-button type="is-danger" class="ml-3" icon-right="square-edit-outline" @click="deleteCategory(idx)">
+              Remove category
+            </b-button>
+          </div>
+          <b-field label="Add dish">
+            <b-autocomplete
+              v-model="name"
+              rounded
+              :data="filteredDataArray"
+              placeholder="Enter dish name"
+              icon="magnify"
+              clearable
+              @select="option => addDishToCategory(idx, option)"
+            >
+              <template slot-scope="props">
+                {{ props.option.title }}
+              </template>
+              <template #empty>
+                No Dish found
+              </template>
+            </b-autocomplete>
+          </b-field>
+
+          <h5>Dishes:</h5>
+          <p v-if="cate.dishes.length === 0" class="has-text-centered">
+            No dishes added
+          </p>
+          <ul v-else>
+            <li v-for="(dish, dishIdx) in cate.dishes" :key="dish._id" class="is-flex is-justify-content-space-between is-align-items-center">
+              <p>{{ dish.title }}</p>
+              <b-button type="is-danger" icon-right="delete" @click="deleteDishOfCategory(idx, dishIdx)" />
+            </li>
+          </ul>
+        </div>
+      </b-collapse> -->
+      <!-- End Categories -->

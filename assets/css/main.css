@@ -1,0 +1,49 @@
+html {
+  overflow: auto;
+}
+
+html, body {
+  height: 100%;
+  background-color: #eee;
+}
+
+#__nuxt, #__layout {
+  height: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.b-sidebar .sidebar-content {
+  width: 40rem !important;
+}
+
+.addons .panel {
+  box-shadow: none;
+}
+
+.addons .panel {
+  margin-bottom: 0;
+}
+
+.modal .animation-content {
+  width: 100%;
+}
+
+i {
+  vertical-align: middle;
+}
+
+.buttons .button {
+  margin-bottom: 0 !important;
+}
+
+
+.is-cursor-pointer {
+  cursor: pointer;
+}
