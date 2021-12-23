@@ -145,11 +145,11 @@
           <b-field
             :message="$v.message.$error ? $t('validations.required') : ''"
             :type="$v.message.$error ? 'is-danger' : ''"
-            :label="$t('inputs.name.label')"
+            :label="$t('inputs.message.label')"
           >
             <b-input
               v-model="message"
-              :placeholder="$t('inputs.name.placeholder')"
+              :placeholder="$t('inputs.message.placeholder')"
               icon-right="close-circle"
               icon-right-clickable
               @icon-right-click="message = ''"

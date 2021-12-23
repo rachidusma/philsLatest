@@ -18,6 +18,10 @@ export default {
       label: 'Name',
       placeholder: 'Enter your name'
     },
+    message: {
+      label: 'Message',
+      placeholder: 'Enter your message'
+    },
     address: 'Address',
     postcode: 'Postcode',
     location: 'Location',
