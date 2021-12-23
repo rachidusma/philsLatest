@@ -133,7 +133,7 @@ export default {
     plugins: ['~/plugins/auth.js']
   },
   env: {
-    baseUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://qopla.herokuapp.com',
+    baseUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://philsburgar.herokuapp.com',
     stripePublicKey: 'pk_test_51JvMKcAgMQD7Pt0PWPxeOWArxjl7bOv7bOPY7P3Rfc6DaqsXrd0SaegQNdVkuMlduutuEccII32Ke5r60PORLdDJ006PmrmZeg'
   },
   router: {
